@@ -1,0 +1,115 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>Tim Lampps&#39; Warrior Center of Martial Arts</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="Animated-Type-Heading.css" />
+    <link rel="stylesheet" href="Navigation-Clean.css" />
+    <link rel="stylesheet" href="Parallax-Scroll-Effect.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean">
+        <div class="container"><a class="navbar-brand" href="#">WARRIOR ARTS CENTER OF DUBLIN</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#">HOME</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Shihon</a></li>
+                    <li class="nav-item dropdown"><a data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle nav-link" href="#">Schools</a>
+                        <div role="menu" class="dropdown-menu">
+						<a role="presentation" class="dropdown-item" href="#">Shito-Ryu</a>
+						<a role="presentation" class="dropdown-item" href="#">Hakkoryu Jujutsu</a>
+						<a role="presentation" class="dropdown-item" href="#">Bujinkan</a>
+						<a role="presentation" class="dropdown-item" href="#">Kenpo</a>
+						<a class="dropdown-item" role="presentation" href="Contact.html">Contact Us</a></div>
+                    </li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+	<form method="post" action="http://www.your-host-name/formmail.php" name="Tell us more">
+	
+	<input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
+
+    <!-- STEP 2: Put your email address in the 'recipients' value.
+                 Note that you also have to allow this email address in the
+                 $TARGET_EMAIL setting within formmail.php!
+    -->
+    <input type="hidden" name="recipients" value="you@your-host-name" />
+
+    <!-- STEP 3: Specify required fields in the 'required' value - or leave unchanged.
+            NOTE: DO NOT put your email address and name here.
+            "Your email address" and "Your name" are error messages for your users to see,
+            not placeholders for you to replace.
+    -->
+    <input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name" />
+
+    <!-- STEP 4: Put your subject line in the 'subject' value. -->
+    <input type="hidden" name="subject" value="Contact about Martial Arts" />
+
+    <!-- ALL DONE! Visit our site for HOW TO guides and more complex features. -->
+
+    <!-- this derives (creates) "email" and "realname" special fields from the input fields -->
+    <input type="hidden" name="derive_fields" value="email=EmailAddr,realname=FullName" />
+
+    <!-- this excludes the "email" and "realname" special fields from the body of the email you receive -->
+    <input type="hidden" name="mail_options" value="Exclude=email;realname" />
+	
+	<table border="1" cellspacing="5%">
+    <tr>
+        <td>
+        <p>Please enter your name:</p>
+        </td>
+        <td><input type="text" name="FullName" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <p>Please enter your email address:</p>
+        </td>
+        <td><input type="text" name="EmailAddr" />
+        </td>
+    </tr>
+    
+    
+    <tr>
+        <td valign="top"><p>What type of martial arts are you interested in?</p>
+        </td>
+        <td valign="top">
+            <p>
+            <select name="Arts[]" multiple="multiple" size="6">
+                <option value="Grappling">Grappling</option>
+                <option value="Self-Defense">Self-Defense</option>
+                <option value="Taekwondo">Taekwondo</option>
+                <option value="Joint maniplation">Joint controlling</option>
+                <option value="Boxing">Boxing</option>
+				<option value="Wrestling">Wrestling</option>
+				<option value="MMA">MMA</option>
+            </select>&nbsp;(Select all that apply; use CTRL-click to select)
+            </p>
+         </td>
+    </tr>
+    <tr>
+        <td valign="top">
+        <p>Please enter your message:</p>
+        </td>
+        <td><textarea name="mesg" rows="10" cols="50"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td><input type="submit" value="Submit" /></td>
+        <td style="text-align:right;"><span style="font-size:60%;">Powered by Tectite <a href="http://www.tectite.com/" target="_blank">web form</a> processor (FormMail).</span>
+        </td>
+    </tr>
+    </table>
+</form>
+	</body>
+
+</html>
